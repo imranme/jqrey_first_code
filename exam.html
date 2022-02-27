@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .all {
+            padding-left: 20px;
+            background-color: rgb(27, 24, 24);
+            width: 700px;
+            margin: 0 auto;
+            height: 700px;
+
+        }
+
+        input {
+            background: rgb(235, 235, 235);
+        }
+
+        h4 {
+            color: aliceblue;
+            display: inline-blok;
+        }
+    </style>
+
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                var qnt = $("#qnt").val();
+                var price = $("#price").val();
+                var total = qnt * price;
+                $("#total").val(total);
+                var discount = $("#discount").val();
+                var grandtotal = total - discount;
+                $("#grandtotal").val(grandtotal);
+            });
+        });
+    </script>
+
+
+    <div class="all">
+        <h4>Qnt</h4>
+        <input id="qnt" type="text" value="" onclick="" placeholder="Qnt:"><br>
+        <h4>Price:</h4>
+        <input id="price" type="text" value="" placeholder="Price:"><br>
+        <h4>Total:</h4>
+        <input id="total" type="text" value="0" placeholder="Total:"><br>
+        <h4>Discount:</h4>
+        <input id="discount" type="text" value="" placeholder="Discount:"><br>
+        <h4>Grand Total:</h4>
+        <input id="grandtotal" type="text" value="" placeholder="Grand Total:"><br><br><br>
+        <button onclick="valuechange()">Submit</button>
+        <button>print</button>
+    </div>
+
+</body>
+
+</html>

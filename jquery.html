@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    </script>
+</head>
+
+<body>
+
+    <div id="love">
+        <input onchange="setvalue()" id="myInput-one" placeholder="Enter your text..." type="text" name="name"
+            id="name">
+        <br>
+        <input onchange="setvalue()" id="myInput-two" placeholder="Enter your text..." type="text" name="name"
+            id="name">
+        <br>
+        <button>Click</button>
+
+    </div>
+    <script>
+        // $(document).ready(function(){
+        //   $("button").click(function(){
+        //     $("div").animate({left:'250px',height:'150px',width:'150px',opacity:'0.5'});
+        //     // $("div").toggle('slow');
+        //   });
+        // });
+
+
+
+        // new-content 
+        $(document).ready(function () {
+            // Get value on button click and show alert
+            $("button").click(function () {
+                var str = $("#myInput-one").val();
+                var str1 = $("#myInput-two").val();
+                alert{ $("") }
+                alert(str + str1);
+            });
+            $("button").click(function () {
+                $("div").animate({
+                    left: '250x',
+                    height: '+=10',
+                    width: '+=10'
+                });
+            });
+        });
+    </script>
+    <input onchange="setvalue()" id="myInput-one" placeholder="Enter your text..." type="text" name="name" id="name">
+    <br>
+    <input onchange="setvalue()" id="myInput-two" placeholder="Enter your text..." type="text" name="name" id="name">
+    <br>
+    <button>Click</button>
+
+
+    <div style="height:100px;width:100px;position:absolute;background: red;transition: 0.3s all ease;">Hello!</div>
+
+</body>
+
+</html>
